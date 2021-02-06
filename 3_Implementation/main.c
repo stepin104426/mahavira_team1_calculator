@@ -3,8 +3,14 @@
 #include "advanced_calculation.h"
 #include "addition.h"
 #include "calculate_power.h"
+<<<<<<< HEAD
 #include "subtraction.h"
+=======
+
+
+>>>>>>> 238f650b869f78c635e87814c0fddbc1a6f057ef
 #include "factorial.h"
+#include "square.h"
 
 
 int main(){
