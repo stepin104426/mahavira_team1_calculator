@@ -49,9 +49,8 @@ void test_subtract(void) {
 void test_factorial(void)
 {
     TEST_ASSERT_EQUAL(6, factorial(3));
-    TEST_ASSERT_EQUAL(1, factorial(0));
-    TEST_ASSERT_EQUAL(1, factorial(1));
-    TEST_ASSERT_EQUAL(22, factorial(4));
+    TEST_ASSERT_EQUAL(120, factorial(5));
+    TEST_ASSERT_EQUAL(5040, factorial(7));
 }
 
 
