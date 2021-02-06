@@ -1,64 +1,86 @@
-#include <CUnit/Basic.h>
-#include <CUnit/CUnit.h>
+#include "unity.h"
+#include <header.h>
+#include<test.h>
 
 /* Modify these two lines according to the project */
-#include <calculator_operations.h>
-#define PROJECT_NAME    "mahavira_team1_calculator"
+#include <header.h>
+#define PROJECT_NAME    "arya_calc"
 
 /* Prototypes for all the test functions */
-
-void test_subtraction(void);
-
+void test_add(void);
+void test_subtract(void);
+void test_multiply(void);
+void test_divide(void);
 void test_factorial(void);
+void test_modulus(void);
+void test_exp(void);
 
+/* Required by the unity test framework */
+void setUp(){}
+/* Required by the unity test framework */
+void tearDown(){}
 
 /* Start of the application test */
-int main() {
-/* Note: Do not edit START*/
-  /*Initialize and setup the Test Framework */
-  if (CUE_SUCCESS != CU_initialize_registry())
-    return CU_get_error();
-  CU_pSuite suite = CU_add_suite(PROJECT_NAME, 0, 0);
-/* Note: Do not edit END */
-  
-  
-  /* Add your test functions in this format for testing*/
-  
-  CU_add_test(suite, "subtract", test_subtract);
-  
-  CU_add_test(suite, "factorial", test_factorial);
- 
+int test_main()
+{
+/* Initiate the Unity Test Framework */
+  UNITY_BEGIN();
 
-
-
-/* Note: Do not edit START*/
-  /* Setup Test Framework to output the result to Screen */
-  CU_basic_set_mode(CU_BRM_VERBOSE);
+/* Run Test functions */
+  RUN_TEST(test_add);
+  RUN_TEST(test_subtract);
+  RUN_TEST(test_multiply);
+  RUN_TEST(test_divide);
+  RUN_TEST(test_factorial);
+  RUN_TEST(test_modulus);
+  RUN_TEST(test_exp);
   
-  /* run the unit test framework*/
-  CU_basic_run_tests();
-  
-  /* Cleaning the Resources used by Unit test framework */
-  CU_cleanup_registry();
-/* Note: Do not edit END */
-  return 0;
+
+  /* Close the Unity Test Framework */
+  return UNITY_END();
 }
 
 /* Write all the test functions */ 
+void test_add(void) {
+  TEST_ASSERT_EQUAL(30, add_numbers(10, 20));
+  TEST_ASSERT_EQUAL(400, add_numbers(200, 200));
+  TEST_ASSERT_EQUAL(42, add_numbers(32, 10));
+}
 
 void test_subtract(void) {
-  CU_ASSERT(-3 == subtract(0, 3));
-  
-  /* Dummy fail*/
-  CU_ASSERT(1 == subtract(1000, 900));
+  TEST_ASSERT_EQUAL(-3, subtract_numbers(0, 3));
+  TEST_ASSERT_EQUAL(-10, subtract_numbers(10, 20));
+  TEST_ASSERT_EQUAL(30, add_numbers(50, 20));
 }
 
-
-void test_factorial(void) {
-  CU_ASSERT(120 == factorial(5));
-  
-  
-  /* Dummy fail*/
-  CU_ASSERT(10 == factorial(7));
+void test_multiply(void) {
+  TEST_ASSERT_EQUAL(0, multiply_numbers(1, 0));
+  TEST_ASSERT_EQUAL(100, multiply_numbers(10, 10));
+  TEST_ASSERT_EQUAL(35, multiply_numbers(-7, -5));
 }
 
+void test_divide(void) {
+  TEST_ASSERT_EQUAL(90, divide(900, 10));
+  TEST_ASSERT_EQUAL(0, divide(3, 0));
+  TEST_ASSERT_EQUAL(9, divide(80, 10));
+}
+
+void test_factorial(void)
+{
+    TEST_ASSERT_EQUAL(6, factorial(3));
+    TEST_ASSERT_EQUAL(1, factorial(0));
+    TEST_ASSERT_EQUAL(1, factorial(1));
+    TEST_ASSERT_EQUAL(22, factorial(4));
+}
+void test_modulus(void)
+{
+    TEST_ASSERT_EQUAL(6, modulus(60, 10));
+    TEST_ASSERT_EQUAL(5, modulus(35, 6));
+    TEST_ASSERT_EQUAL(2, modulus(43, 7));
+}
+
+void test_exp(void)
+{
+  TEST_ASSERT_EQUAL(9, exponential(3, 2);
+  TEST_ASSERT_EQUAL(1, exponential(10, 0);
+ }
