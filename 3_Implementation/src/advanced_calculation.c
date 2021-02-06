@@ -11,7 +11,7 @@ int num, catch,operand;
 char back=0;
 
     do{
-    printf("1.Power  2.factorial 3.square  4.prime  5.Difference of days  6.leap year");
+    printf("1.Power  2.factorial 3.square  4.prime  5.Days caclulation  6.leap year");
     printf("\n Enter your choice:");
     scanf("%d",&num);
 
@@ -42,15 +42,9 @@ char back=0;
                     printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
                     scanf(" %c", &back);
                     break;
-            case 6: 
-                    /*leapyear();
-                    if(leapyear(yyy))
-                        printf("leap year");
-                    else
-                        printf("not");
-                    return 0;
+            case 6: leapyear();
                     printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
-                    scanf(" %c", &back);*/
+                    scanf(" %c", &back);
                     break;
         }
     }while(back!= 'N');

@@ -4,5 +4,5 @@
 
 int datescalc();
 int validity(int dd,int mm,int yy);
-int leapyear(int ly);
+int leapyear();
 #endif
