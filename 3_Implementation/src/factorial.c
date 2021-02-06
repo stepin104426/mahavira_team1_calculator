@@ -1,12 +1,11 @@
 #include "factorial.h"
 #include<stdio.h>
 
-int factorial()
+int factorial(int operand)
 {
-    
-    int fact = 1, operand = 0;
-    printf("enter the number");
-    scanf("%d", &operand);
+    int fact = 1;
+    //printf("enter the number");
+    //scanf("%d", &operand);
     if(operand < 0)
     return 1;
     else{

@@ -6,7 +6,8 @@ BUILD = build
 SRC =  src/basic_calculation.c src/advanced_calculation.c src/addition.c src/calculate_power.c src/multiplication.c src/subtraction.c src/factorial.c src/square.c src/prime.c src/dates.c main.c 
 
 # All source code files
-
+#unity/unity.h\ 
+#test/test.c\
 
 #src/calculate_power.c main.c
 
@@ -15,6 +16,8 @@ SRC =  src/basic_calculation.c src/advanced_calculation.c src/addition.c src/cal
 
 
 INC = -Iinc\
+	  -Iunity\
+	  -Itest	
 
 # Project Output name
 #PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME)

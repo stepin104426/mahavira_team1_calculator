@@ -3,11 +3,11 @@
 #include "factorial.h"
 #include "square.h"
 #include "calculate_power.h"
-#include "dates.h"
+#include "dates.h" 
 
 char advanced_calculation(){
 
-int num, catch;
+int num, catch,operand;
 char back=0;
 
     do{
@@ -21,10 +21,14 @@ char back=0;
                     printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
                     scanf(" %c", &back);
                     break;
-            case 2: catch = factorial();
-                     printf("the factrial is %d", catch);   
-                     printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
-                     scanf(" %c", &back);
+            case 2: printf("enter the number");
+                    scanf("%d", &operand);
+
+                    catch = factorial(operand);
+
+                    printf("the factrial is %d", catch);   
+                    printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
+                    scanf(" %c", &back);
                     break;
             case 3: square();
                     printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
@@ -34,20 +38,19 @@ char back=0;
                     printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
                     scanf(" %c", &back);
                     break;
-            case 5: datescalc();
+            case 5: catch = datescalc();
                     printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
                     scanf(" %c", &back);
                     break;
-            case 6: int yyy;
-                    scanf("%d",&yyy);
-                    leapyear(yyy);
+            case 6: 
+                    /*leapyear();
                     if(leapyear(yyy))
                         printf("leap year");
                     else
                         printf("not");
                     return 0;
                     printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
-                    scanf(" %c", &back);
+                    scanf(" %c", &back);*/
                     break;
         }
     }while(back!= 'N');

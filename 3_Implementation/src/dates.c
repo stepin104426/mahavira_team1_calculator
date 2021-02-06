@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include"dates.h"
+#include "dates.h"
 int datescalc()
 {
     int d1,m1,y1,d2,m2,y2;
@@ -91,6 +91,8 @@ int validity(int dd,int mm,int yy)
 }
 int leapyear(int ly)
 {
+    int yyy;
+    scanf("%d",&yyy);
     if((ly%4==0&&ly%100!=0)||ly%400==0)
     {
       return 1;
