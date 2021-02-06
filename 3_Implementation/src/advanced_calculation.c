@@ -3,15 +3,15 @@
 #include "factorial.h"
 #include "square.h"
 #include "calculate_power.h"
-#include "dates.h"
+#include "dates.h" 
 
 char advanced_calculation(){
 
-int num, catch;
+int num, catch,operand;
 char back=0;
 
     do{
-    printf("1.Power  2.factorial 3.square  4.prime  5.Difference of days  6.leap year");
+    printf("1.Power  2.factorial 3.square  4.prime  5.Days caclulation  6.leap year");
     printf("\n Enter your choice:");
     scanf("%d",&num);
 
@@ -21,10 +21,14 @@ char back=0;
                     printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
                     scanf(" %c", &back);
                     break;
-            case 2: catch = factorial();
-                     printf("the factrial is %d", catch);   
-                     printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
-                     scanf(" %c", &back);
+            case 2: printf("enter the number");
+                    scanf("%d", &operand);
+
+                    catch = factorial(operand);
+
+                    printf("the factrial is %d", catch);   
+                    printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
+                    scanf(" %c", &back);
                     break;
             case 3: square();
                     printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
@@ -34,18 +38,11 @@ char back=0;
                     printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
                     scanf(" %c", &back);
                     break;
-            case 5: datescalc();
+            case 5: catch = datescalc();
                     printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
                     scanf(" %c", &back);
                     break;
-            case 6: int yyy;
-                    scanf("%d",&yyy);
-                    leapyear(yyy);
-                    if(leapyear(yyy))
-                        printf("leap year");
-                    else
-                        printf("not");
-                    return 0;
+            case 6: leapyear();
                     printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
                     scanf(" %c", &back);
                     break;

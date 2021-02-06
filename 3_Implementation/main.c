@@ -2,15 +2,14 @@
 #include "basic_calculation.h"
 #include "advanced_calculation.h"
 #include "addition.h"
-#include "calculate_power.h"
+#include "subtraction.h"
 #include "multiplication.h"
-#include "subtraction.h"
-#include "subtraction.h"
+#include "calculate_power.h"
+#include "prime.h"
 #include "factorial.h"
 #include "square.h"
 #include "dates.h"
 #include "division.h"
-
 
 int main(){
 
@@ -21,7 +20,7 @@ int main(){
     printf("\n Enter your choice: \n");
 
     do{
-        printf("\n 1. Basic calculations 2. Advanced calculations  E to exit \n");
+        printf("\n 1. Basic calculations 2. Advanced calculations  E for exit \n");
         scanf("%d", &menu_num);
 
         switch(menu_num){
