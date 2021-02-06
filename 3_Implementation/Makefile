@@ -3,9 +3,10 @@ PROJECT_NAME = MAHAVIRA_TEAM1_CALCULATOR
 
 # Output directory
 BUILD = build
+SRC =  src/basic_calculation.c src/advanced_calculation.c src/addition.c src/calculate_power.c src/multiplication.c src/subtraction.c src/factorial.c src/square.c src/prime.c main.c 
 
 # All source code files
-SRC = main.c src/basic_calculation.c src/advanced_calculation.c src/addition.c src/subtraction.c\
+
 
 #src/calculate_power.c main.c
 

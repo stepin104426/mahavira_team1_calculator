@@ -3,16 +3,9 @@
 #include "advanced_calculation.h"
 #include "addition.h"
 #include "calculate_power.h"
-<<<<<<< HEAD
-<<<<<<< HEAD
+#include "multiplication.h"
 #include "subtraction.h"
-=======
-
-=======
 #include "subtraction.h"
->>>>>>> b3a15a7aede7180ea839d42feed8577b5f341157
-
->>>>>>> 238f650b869f78c635e87814c0fddbc1a6f057ef
 #include "factorial.h"
 #include "square.h"
 
@@ -26,7 +19,7 @@ int main(){
     printf("\n Enter your choice: \n");
 
     do{
-        printf("\n 1. Basic calculations 2. Advanced calculations \n");
+        printf("\n 1. Basic calculations 2. Advanced calculations  E to exit \n");
         scanf("%d", &menu_num);
 
         switch(menu_num){
@@ -35,7 +28,7 @@ int main(){
                     break;
             case 2: option = advanced_calculation();
                     break;
-            default: option = 'E';
+            default:option = 'E';
         }
 
     }while(option!= 'E');

@@ -1,7 +1,10 @@
-#ifndef _MULTIPLICATION_H_
-#define _MULTIPLICATION_H_
-#include <stdio.h>
-
-int multiplication();
-
-#endif
+#include "multiplication.h"
+void multiplication(){
+    double a,b,multiplication;
+    printf("Enter Input 1:");
+    scanf("%lf",&a);
+    printf("Enter Input 1:"); 
+    scanf("%lf",&b);
+    multiplication=a*b;
+    printf("The output of multiplication is:%lf",multiplication);
+}

@@ -1,6 +1,7 @@
 #include "basic_calculation.h"
 #include "addition.h"
 #include "subtraction.h"
+#include "multiplication.h"
 
 
 char basic_calculation(){
@@ -23,9 +24,9 @@ do{
                     printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
                     scanf(" %c", &back);
                     break;
-            case 3: //multiplication();
-                    //printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
-                    //scanf(" %c", &back);
+            case 3: multiplication();
+                    printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
+                    scanf(" %c", &back);
                     break;
             case 4: //division();
                     //printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
