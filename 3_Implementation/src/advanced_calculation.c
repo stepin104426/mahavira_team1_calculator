@@ -38,14 +38,7 @@ char back=0;
                     printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
                     scanf(" %c", &back);
                     break;
-            case 6: int yyy;
-                    scanf("%d",&yyy);
-                    leapyear(yyy);
-                    if(leapyear(yyy))
-                        printf("leap year");
-                    else
-                        printf("not");
-                    return 0;
+            case 6: leapyear();
                     printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
                     scanf(" %c", &back);
                     break;

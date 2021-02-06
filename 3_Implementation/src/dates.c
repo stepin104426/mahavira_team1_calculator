@@ -90,11 +90,13 @@ int validity(int dd,int mm,int yy)
 
 }
 int leapyear(int ly)
-{
+{   int yyy;
+    scanf("%d",&yyy);
     if((ly%4==0&&ly%100!=0)||ly%400==0)
     {
-      return 1;
+      printf("leap year");
     }
     else
+     printf("not");
     return 0;
 }

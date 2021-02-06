@@ -3,6 +3,6 @@
 
 #include <stdio.h>
 
-void division();
+float division();
  
  #endif 
