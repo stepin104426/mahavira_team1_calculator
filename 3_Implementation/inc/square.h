@@ -3,6 +3,6 @@
 #define _SQUARE_H_
 #include <stdio.h>
 
-int sqaure();
+void square();
 
 #endif

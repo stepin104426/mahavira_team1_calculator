@@ -1,8 +1,12 @@
 #include "advanced_calculation.h"
+#include "prime.h"
+#include "factorial.h"
+#include "square.h"
+#include "calculate_power.h"
 
 char advanced_calculation(){
 
-int num;
+int num, catch;
 char back=0;
 
     do{
@@ -12,21 +16,22 @@ char back=0;
 
         switch(num){
 
-            case 1: //power();
-                    //printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
-                    //scanf(" %c", &back);
+            case 1: calculate_power();
+                    printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
+                    scanf(" %c", &back);
                     break;
-            case 2: //factorial();
-                    //printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
-                    //scanf(" %c", &back);
+            case 2: catch = factorial();
+                     printf("the factrial is %d", catch);   
+                     printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
+                     scanf(" %c", &back);
                     break;
-            case 3: //square();
-                    //printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
-                    //scanf(" %c", &back);
+            case 3: square();
+                    printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
+                    scanf(" %c", &back);
                     break;
-            case 4: //prime();
-                    //printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
-                    //scanf(" %c", &back);
+            case 4: prime();
+                    printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
+                    scanf(" %c", &back);
                     break;
             case 5:///difference_of_days();
                     //printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");

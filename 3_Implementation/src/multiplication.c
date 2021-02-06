@@ -1,10 +1,10 @@
 #include "multiplication.h"
 void multiplication(){
-    int a,b,multiplication;
+    double a,b,multiplication;
     printf("Enter Input 1:");
-    scanf("%f",&a);
+    scanf("%lf",&a);
     printf("Enter Input 1:"); 
-    scanf("%f",&b);
+    scanf("%lf",&b);
     multiplication=a*b;
-    printf("The output of multiplication is:%f",multiplication);
+    printf("The output of multiplication is:%lf",multiplication);
 }

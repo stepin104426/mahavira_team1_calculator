@@ -4,6 +4,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int factorial(int operand1);
+int factorial();
 
 #endif
