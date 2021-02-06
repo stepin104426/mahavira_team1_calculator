@@ -55,10 +55,10 @@ void test_subtract(void) {
 
 
 void test_factorial(void) {
-  CU_ASSERT(6 == factorial(3));
-  CU_ASSERT(-1 == factorial(-12))
+  CU_ASSERT(120 == factorial(5));
+  
   
   /* Dummy fail*/
-  CU_ASSERT(10 == factorial(97));
+  CU_ASSERT(10 == factorial(7));
 }
 
