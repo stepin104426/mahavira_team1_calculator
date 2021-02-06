@@ -8,6 +8,7 @@
 #include "subtraction.h"
 #include "factorial.h"
 #include "square.h"
+#include "dates.h"
 
 
 int main(){

@@ -3,6 +3,7 @@
 #include "factorial.h"
 #include "square.h"
 #include "calculate_power.h"
+#include "dates.h"
 
 char advanced_calculation(){
 
@@ -33,13 +34,20 @@ char back=0;
                     printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
                     scanf(" %c", &back);
                     break;
-            case 5:///difference_of_days();
-                    //printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
-                    //scanf(" %c", &back);
+            case 5: datescalc();
+                    printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
+                    scanf(" %c", &back);
                     break;
-            case 6: //leap_year();
-                    //printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
-                    //scanf(" %c", &back);
+            case 6: int yyy;
+                    scanf("%d",&yyy);
+                    leapyear(yyy);
+                    if(leapyear(yyy))
+                        printf("leap year");
+                    else
+                        printf("not");
+                    return 0;
+                    printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
+                    scanf(" %c", &back);
                     break;
         }
     }while(back!= 'N');
