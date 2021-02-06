@@ -1,6 +1,6 @@
 
 #include "calculate_power.h"
-int calculate_power(int Base_Number, int exponent)
+void calculate_power()
 
 {
     int Base_Number, exponent;
@@ -19,6 +19,5 @@ int calculate_power(int Base_Number, int exponent)
     
     printf("Answer = %lld", result);
     
-    return 0;
-}
+}   
     
