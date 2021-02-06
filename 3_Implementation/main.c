@@ -4,9 +4,13 @@
 #include "addition.h"
 #include "calculate_power.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "subtraction.h"
 =======
 
+=======
+#include "subtraction.h"
+>>>>>>> b3a15a7aede7180ea839d42feed8577b5f341157
 
 >>>>>>> 238f650b869f78c635e87814c0fddbc1a6f057ef
 #include "factorial.h"

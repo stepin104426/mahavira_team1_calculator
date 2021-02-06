@@ -1,4 +1,5 @@
 #include "advanced_calculation.h"
+#include "prime.h"
 
 char advanced_calculation(){
 
